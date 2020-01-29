@@ -4,7 +4,7 @@
 
 <h1> Introduction </h1>
 
-Présentation
+Présentation :
  - Ecrire un programme en C implémentant le jeu Mastermind. 
  - Une boucle de jeu doit permettre de jouer autant de parties qu’il est souhaité. 
  - Une partie est une série de tentatives du joueur. 
@@ -12,13 +12,15 @@ Présentation
  - La combinaison secrète de 4 caractères parmi 6, à trouver par le joueur, est générée aléatoirement par le programme. 
  - Les caractères possibles sont ‘A’, ‘B’, ‘C’, ‘D’, ‘E’ et ‘F’. 
 
-Compétences utilisées
+Compétences utilisées :
  - [x] pointeur
  - [x] structure
  - [x] programmation modulaire
  - [x] makefile
  - [x] algorithmie
  - [x] fichier
+
+
 
 <h1> Compréhension du code : </h1>
  
