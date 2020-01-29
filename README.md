@@ -27,32 +27,33 @@ Compétences utilisées :
 <h1> Compréhension du code : </h1>
  
  Structures : 
+ 
   - joueur (regroupe le nom, la combinaison, le nombres de tentatives du joueur)
      ```c
      typedef struct
      {
-         char nom[10];               
-         char combinaison_Joueur[6]; // nombre d'éléments à trouver
-         int tentative;              // nombre de tentatives
+         char nom[10];               // speudo
+         char combinaison_Joueur[6]; // combinaison du joueur
+         int tentative;              // nombre de tentatives réalisées
      } joueur;
      ```
      
-  - niveau (regroupe la difficulté, la combinaison secrète, le nombre de coups et de pions)
+  - niveau
      ```c
      typedef struct
      {
-         char nom[10];                // faudra faire un enum
+         char nom[10];                // libellé difficulté FACILE - INTERMEDIAIRE - DIFFICILE
          int pion;                    // nombre d'éléments à trouver
-         int coup;                    // nombre de tentatives
-         char combinaison_Secrete[6]; // doit être généré aléatoirement
+         int coup;                    // nombre de tentatives autorisées
+         char combinaison_Secrete[6]; // combinaison aléatoire à trouver
      } niveau;
      ```
      
-  - mastermind (regroupe un joueur, un niveau, un fichier)
+  - mastermind
      ```c
      typedef struct mastermind
      {
-         joueur joueur; // nom - tentative - combinaison_Joueur
+         joueur joueur; // nom - combinaison_Joueur - tentative
          niveau niveau; // nom - pion - coup - combinaison_Secrete
          FILE *out;     // fichier de sauvegarde des résultats
      } mastermind;
