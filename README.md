@@ -1,11 +1,11 @@
 # mastermind
 #mastermind #C
 
-Programme réalisé en langage C 
+<h1> Programme réalisé en langage C </h1>
 
-- Simulation d'un Mastermind (trouver une combinaison secrète)
+* Simulation d'un Mastermind (trouver une combinaison secrète)
 
-- Compétences utilisées :
+* Compétences utilisées :
     - Pointeur
     - Structure
     - Programmation modulaire
@@ -13,7 +13,7 @@ Programme réalisé en langage C
     - Algorithmie
     - Fichier
 
-Compréhension du code :
+<h1> Compréhension du code : </h1>
  
  Structures : 
   - joueur (regroupe le nom, la combinaison, le nombres de tentatives du joueur)
@@ -22,3 +22,15 @@ Compréhension du code :
               
 
      
+```c
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
+```
+
+- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
+- [x] list syntax required (any unordered or ordered list supported)
+- [x] this is a complete item
+- [ ] this is an incomplete item
