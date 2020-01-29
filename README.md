@@ -61,7 +61,3 @@ Compétences utilisées :
   
 
 Le code est découpé en plusieurs parties, on appelle cela la programmation modulaire. C'est-à-dire, qu'au lieu de tout mettre dans une seule fichier (main.c), j'ai séparé mon projet en 4 parties chacune dépendantes les une des autres. Voici un schéma permettant de le visualiser :
-
-     
-![Alt text](C:\Users\henri\Pictures\LOL?raw=true "Optional Title")
-
