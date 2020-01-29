@@ -1,16 +1,15 @@
 # mastermind
 #mastermind #C #ESIPE
 
-<h1> INTRODUCTION </h1>
-- Ecrire un programme en C implémentant le jeu Mastermind. 
-- Une boucle de jeu doit permettre de jouer autant de parties qu’il est souhaité. 
-- Une partie est une série de tentatives du joueur. La partie s’arrête lorsque la combinaison secrète est trouvée ou lorsque le nombre de tentatives autorisées est atteint. 
-- La combinaison secrète de 4 caractères parmi 6, à trouver par le joueur, est générée aléatoirement par le programme. 
-- Les caractères possibles sont ‘A’, ‘B’, ‘C’, ‘D’, ‘E’ et ‘F’. 
+<h3> INTRODUCTION </h3>
+    - Ecrire un programme en C implémentant le jeu Mastermind. 
+    - Une boucle de jeu doit permettre de jouer autant de parties qu’il est souhaité. 
+    - Une partie est une série de tentatives du joueur. 
+    - La partie s’arrête lorsque la combinaison secrète est trouvée ou lorsque le nombre  de tentatives autorisées est atteint. 
+    - La combinaison secrète de 4 caractères parmi 6, à trouver par le joueur, est générée aléatoirement par le programme. 
+    - Les caractères possibles sont ‘A’, ‘B’, ‘C’, ‘D’, ‘E’ et ‘F’. 
 
-* Simulation d'un Mastermind (trouver une combinaison secrète)
-
-* Compétences utilisées :
+<h3> Compétences utilisées </h3>
     - [x] pointeur
     - [x] structure
     - [x] programmation modulaire
