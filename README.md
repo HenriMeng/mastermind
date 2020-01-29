@@ -4,7 +4,7 @@
 #ESIPE
 
 
-<h1> Introduction </h1>
+<h1> Introduction : </h1>
 
 Présentation :
  - Ecrire un programme en C implémentant le jeu Mastermind. 
@@ -42,7 +42,7 @@ Compétences utilisées :
      ```c
      typedef struct
      {
-         char nom[10];                // libellé difficulté FACILE - INTERMEDIAIRE - DIFFICILE
+         char nom[10];                // libellé difficulté (FACILE - INTERMEDIAIRE - DIFFICILE)
          int pion;                    // nombre d'éléments à trouver
          int coup;                    // nombre de tentatives autorisées
          char combinaison_Secrete[6]; // combinaison aléatoire à trouver
