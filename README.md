@@ -28,7 +28,7 @@ Compétences utilisées :
  
  Structures : 
  
-  - joueur (regroupe le nom, la combinaison, le nombres de tentatives du joueur)
+  - joueur
      ```c
      typedef struct
      {
