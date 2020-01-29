@@ -24,9 +24,9 @@ int Saisir_Niveau()
 /**
  * modifie les attributs nom - pion - coup
  **/
-void Modifier_Niveau(niveau *niveau, char *nom, int pion, int coup)
+void Modifier_Niveau(niveau *niveau, char *libelle, int pion, int coup)
 {
-    strcpy(niveau->nom, nom);
+    strcpy(niveau->libelle, libelle);
     niveau->pion = pion;
     niveau->coup = coup;
 }

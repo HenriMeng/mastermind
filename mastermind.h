@@ -8,7 +8,7 @@
 
 typedef struct mastermind
 {
-    joueur joueur; // nom - tentative - combinaison_Joueur
+    joueur joueur; // nom - combinaison_Joueur - tentative
     niveau niveau; // nom - pion - coup - combinaison_Secrete
     FILE *out;     // fichier de sauvegarde des résultats
 } mastermind;

@@ -18,7 +18,7 @@ joueur Saisir_Nom_Joueur()
 /**
  * "n" = nombre de pions (selon le niveau de difficulté)  
  **/
-void Saisir_Combinaison_Joueur(joueur *joueur, int n)
+void Saisir_Combinaison_Joueur(joueur *joueur, const int n)
 {
     /* récupère la combinaison de l'utilisateur */
     printf("Entrez une combinaison : ");

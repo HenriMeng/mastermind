@@ -96,7 +96,7 @@ void Gestion_Choix_Niveau(mastermind mastermind, int choix)
         Separateur();
         /* affiche règles et lance le Mastermind */
         printf("| Niveau %s |\n%s, tu as %d coups pour trouver la combinaison secrete de %d pions"
-        , mastermind.niveau.nom
+        , mastermind.niveau.libelle
         , mastermind.joueur.nom
         , mastermind.niveau.coup
         , mastermind.niveau.pion);
@@ -109,7 +109,7 @@ void Gestion_Choix_Niveau(mastermind mastermind, int choix)
         Separateur();
         /* affiche règles et lance le Mastermind */
         printf("| Niveau %s |\n%s, tu as %d coups pour trouver la combinaison secrete de %d pions"
-        , mastermind.niveau.nom
+        , mastermind.niveau.libelle
         , mastermind.joueur.nom
         , mastermind.niveau.coup
         , mastermind.niveau.pion);
@@ -122,7 +122,7 @@ void Gestion_Choix_Niveau(mastermind mastermind, int choix)
         Separateur();
         /* affiche règles et lance le Mastermind */
         printf("| Niveau %s |\n%s, tu as %d coups pour trouver la combinaison secrete de %d pions"
-        , mastermind.niveau.nom
+        , mastermind.niveau.libelle
         , mastermind.joueur.nom
         , mastermind.niveau.coup
         , mastermind.niveau.pion);
@@ -160,7 +160,7 @@ void Lancement_Mastermind(mastermind mastermind)
             /* stocke le résultat dans "résultat" */
             sprintf(resultat, "%s -> GAGNE (NIVEAU %s) -> %d coups\n"
             , mastermind.joueur.nom
-            , mastermind.niveau.nom
+            , mastermind.niveau.libelle
             , mastermind.joueur.tentative);
             Sauvegarder_Resultat(mastermind, resultat);
 
@@ -175,13 +175,13 @@ void Lancement_Mastermind(mastermind mastermind)
             /* stocke le résultat dans "résultat" */
             sprintf(resultat, "%s -> PERDU (NIVEAU %s)\n"
             , mastermind.joueur.nom
-            , mastermind.niveau.nom);
+            , mastermind.niveau.libelle);
             Sauvegarder_Resultat(mastermind, resultat);
 
             /* affiche le résultat */
             printf("%s -> PERDU (NIVEAU %s) -> la combinaison secrete etait : "
             , mastermind.joueur.nom
-            , mastermind.niveau.nom);
+            , mastermind.niveau.libelle);
             Afficher_Combinaison_Secrete(mastermind.niveau);
             break;
         }
