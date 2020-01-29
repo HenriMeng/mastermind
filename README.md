@@ -1,17 +1,22 @@
 # mastermind
-#mastermind #C
+#mastermind #C #ESIPE
 
-<h1> Programme réalisé en langage C </h1>
+<h1> INTRODUCTION </h1>
+- Ecrire un programme en C implémentant le jeu Mastermind. 
+- Une boucle de jeu doit permettre de jouer autant de parties qu’il est souhaité. 
+- Une partie est une série de tentatives du joueur. La partie s’arrête lorsque la combinaison secrète est trouvée ou lorsque le nombre de tentatives autorisées est atteint. 
+- La combinaison secrète de 4 caractères parmi 6, à trouver par le joueur, est générée aléatoirement par le programme. 
+- Les caractères possibles sont ‘A’, ‘B’, ‘C’, ‘D’, ‘E’ et ‘F’. 
 
 * Simulation d'un Mastermind (trouver une combinaison secrète)
 
 * Compétences utilisées :
-    - Pointeur
-    - Structure
-    - Programmation modulaire
-    - Makefile
-    - Algorithmie
-    - Fichier
+    - [x] pointeur
+    - [x] structure
+    - [x] programmation modulaire
+    - [x] makefile
+    - [x] algorithmie
+    - [x] fichier
 
 <h1> Compréhension du code : </h1>
  
@@ -19,7 +24,8 @@
   - joueur (regroupe le nom, la combinaison, le nombres de tentatives du joueur)
   - niveau (regroupe la difficulté, la combinaison secrète, le nombre de coups et de pions)
   - mastermind (regroupe un joueur, un niveau, un fichier)
-              
+  
+
 
      
 ```c
@@ -29,8 +35,3 @@ function fancyAlert(arg) {
   }
 }
 ```
-
-- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
-- [x] list syntax required (any unordered or ordered list supported)
-- [x] this is a complete item
-- [ ] this is an incomplete item
