@@ -20,5 +20,6 @@ void Affichage_Combinaison(mastermind mastermind);                // affiche la 
 int Comparaison(mastermind mastermind);                           // détermine si la combinaison est bonne et donne des indices à l'utilisateur
 int Existant(mastermind mastermind, char c);                      // vérifie si le pion inséré fait parti de la combinaison secrète
 void Sauvegarder_Resultat(mastermind mastermind, char texte[25]); // sauvegarde le résultat de la partie dans un fichier
+void Stop_partie(mastermind mastermind);                          // TODO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 #endif
