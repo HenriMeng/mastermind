@@ -1,7 +1,7 @@
 # mastermind
 #mastermind #C #ESIPE
 
-<h3> INTRODUCTION </h3>
+INTRODUCTION
     - Ecrire un programme en C implémentant le jeu Mastermind. 
     - Une boucle de jeu doit permettre de jouer autant de parties qu’il est souhaité. 
     - Une partie est une série de tentatives du joueur. 
@@ -9,7 +9,7 @@
     - La combinaison secrète de 4 caractères parmi 6, à trouver par le joueur, est générée aléatoirement par le programme. 
     - Les caractères possibles sont ‘A’, ‘B’, ‘C’, ‘D’, ‘E’ et ‘F’. 
 
-<h3> Compétences utilisées </h3>
+Compétences utilisées
     - [x] pointeur
     - [x] structure
     - [x] programmation modulaire
