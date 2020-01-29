@@ -1,4 +1,4 @@
-# mastermind
+# MASTERMIND
 #mastermind #C #ESIPE
 
 
