@@ -9,7 +9,7 @@ joueur Saisir_Nom_Joueur()
     joueur.tentative = 1; // initialisation à 1 !importante! pour l'incrémentation
 
     /* récupère le nom de l'utilisateur */
-    printf("Entrez un speudonyme : ");
+    printf("Entrez un pseudonyme : ");
     scanf("%s", joueur.nom);
 
     return joueur;
