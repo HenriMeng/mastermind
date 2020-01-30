@@ -33,9 +33,9 @@ int main(int argc, char *argv[])
 
 /* FONCTIONS ######################################################### */
 
-/**
+/*****
  * affiche le dernier résultat si un deuxième argument est écrit lors de l'exécution du programme. 
- **/
+ *****/
 void Affichage_Resultats(int argc, char *argv[])
 {
     FILE *in = fopen("resultat.txt", "r");

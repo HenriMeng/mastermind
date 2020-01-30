@@ -7,6 +7,6 @@
 
 void Afficher_Menu();     // affiche le menu
 int Saisir_Menu();        // récupère le choix de l'utilisateur
-void Afficher_Tutoriel(); // affiche le tutoriel
+void Afficher_Tutoriel(); // affiche le tutoriel 
 
 #endif

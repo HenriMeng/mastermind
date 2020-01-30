@@ -7,7 +7,7 @@ typedef struct
 {
     char libelle[10];            // libellé (FACILE - INTERMEDIAIRE - DIFFICILE)
     int pion;                    // nombre d'éléments à trouver
-    int coup;                    // nombre de tentatives autorisées
+    int coup;                    // nombre de tentatives autorisées 
     char combinaison_Secrete[6]; // combinaison !aléatoire! secrète
 } niveau;
 

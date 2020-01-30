@@ -29,7 +29,7 @@ void Afficher_Tutoriel()
         "| BUT |\n"
         " - Trouvez la combinaison secrete.\n"
         " - Selon le niveau de difficulte la combinaison varie de 4 a 6 pions\n"
-        " - Chaque pion peut etre soit 'A', 'B', 'C', 'D', 'E', 'F'\n\n"
+        " - Chaque pion peut etre soit 'A', 'B', 'C', 'D', 'E', 'F' \n\n"
         "| INDICES |\n"
         "Lorsque que vous essayez de trouver la combinaison des indices vous seront indiques\n"
         " O -> correct\n"

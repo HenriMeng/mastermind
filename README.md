@@ -14,7 +14,7 @@ Présentation :
  - La combinaison secrète de 4 caractères parmi 6, à trouver par le joueur, est générée aléatoirement par le programme. 
  - Les caractères possibles sont ‘A’, ‘B’, ‘C’, ‘D’, ‘E’ et ‘F’. 
 
-Compétences utilisées :
+Compétences utilisées : 
  - [x] pointeur
  - [x] structure
  - [x] programmation modulaire

@@ -15,9 +15,9 @@ joueur Saisir_Nom_Joueur()
     return joueur;
 }
 
-/**
+/******
  * "n" = nombre de pions (selon le niveau de difficulté)  
- **/
+ ******/
 void Saisir_Combinaison_Joueur(joueur *joueur, const int n)
 {
     /* récupère la combinaison de l'utilisateur */

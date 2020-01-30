@@ -12,8 +12,8 @@ typedef struct
 
 /* PROTOTYPES ##########################################################*/
 
-joueur Saisir_Nom_Joueur();                            // déclare un joueur et lui demande son speudo
+joueur Saisir_Nom_Joueur();                                  // déclare un joueur et lui demande son speudo
 void Saisir_Combinaison_Joueur(joueur *joueur, const int n); // demande une combinaison
-void Incrementation_Tentative_Joueur(joueur *joueur);  // compteur de manches
+void Incrementation_Tentative_Joueur(joueur *joueur);        // compteur de manches
 
 #endif

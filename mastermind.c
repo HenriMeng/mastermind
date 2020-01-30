@@ -101,23 +101,3 @@ void Sauvegarder_Resultat(mastermind mastermind, char texte[50])
     /* fermeture fichier */
     fclose(mastermind.out);
 }
-
-/**
- * TODO
- **/
-void Stop_partie(mastermind mastermind)
-{
-    char resultat[100];
-
-    if (strcmp(mastermind.joueur.combinaison_Joueur, "STOP") == 1)
-    {
-        if ((mastermind.out = fopen("partie_en_cours.txt", "w")) != NULL)
-        {
-            sprintf(resultat, "NOM : %s\nNIVEAU : %s\nCOUPS : %d/%d\nDERNIERE.COMBI : %s\nCOMBI.SECRETE : %s", mastermind.joueur.nom, mastermind.niveau.libelle, mastermind.joueur.tentative, mastermind.niveau.coup, mastermind.joueur.combinaison_Joueur, mastermind.niveau.combinaison_Secrete);
-            fputs(resultat, mastermind.out);
-            fclose(mastermind.out);
-            printf("\nPartie sauvegardee.");
-            exit(0);
-        }
-    }
-}

@@ -5,7 +5,7 @@
 #include "niveau.h"
 
 void Afficher_Niveaux()
-{
+{ 
     printf(" Niveau de difficulte :\n"
            " - 1. FACILE\n"
            " - 2. INTERMEDIAIRE\n"
@@ -36,7 +36,7 @@ void Afficher_Combinaison_Secrete(niveau niveau)
     for (int i = 0; i < niveau.pion; i++)
     {
         printf(" %c", niveau.combinaison_Secrete[i]);
-    }    
+    }
 }
 
 /**
@@ -53,6 +53,6 @@ void Generation_Combinaison_Secrete(niveau *niveau)
     /* génère des valeurs aléatoires et les insère dans la combinaison secrète */
     for (int i = 0; i < niveau->pion; i++)
     {
-        niveau->combinaison_Secrete[i] = ascii + rand() % 6;  // ascii + un nombre entre 0 - 5
+        niveau->combinaison_Secrete[i] = ascii + rand() % 6; // ascii + un nombre entre 0 - 5
     }
 }
