@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "menu.h"
 
 /* PROTYPES ########################################################## */
 
+void Affichage_Resultats(int argc, char *argv[]);            // affiche le dernier résultat si un deuxième argument est écrit lors de l'exécution du programme
 void Separateur();                                           // esthetique
 void Appel_Menu(int *choix);                                 // appels de méthodes faisant le menu
 void Gestion_Choix_Menu(int choix);                          // dirige l'utilisateur selon son choix : tuto - jeu - sortie
@@ -14,9 +16,11 @@ void Lancement_Mastermind(mastermind mastermind);            // Mastermind
 
 /* MAIN ############################################################## */
 
-int main()
+int main(int argc, char *argv[])
 {
     int choix = 0;
+
+    Affichage_Resultats(argc, argv);
 
     for (;;) // boucle infinie
     {
@@ -29,11 +33,35 @@ int main()
 
 /* FONCTIONS ######################################################### */
 
+/**
+ * affiche le dernier résultat si un deuxième argument est écrit lors de l'exécution du programme. 
+ **/
+void Affichage_Resultats(int argc, char *argv[])
+{
+    FILE *in = fopen("resultat.txt", "r");
+    char texte[100];
+
+    if (argc > 1)
+    {
+        if ((fgets(texte, 100, in)) != NULL)
+        {
+            printf("\n\nDernier resultat : %s", texte);
+        }
+    }
+
+    fclose(in);
+}
+
+/* Une simple barre :) */
 void Separateur()
 {
     printf("\n________________________________________\n\n");
 }
 
+/** 
+ * Affichage menu
+ * Choix 
+ **/
 void Appel_Menu(int *choix)
 {
     Separateur();
@@ -42,6 +70,10 @@ void Appel_Menu(int *choix)
     Separateur();
 }
 
+/** 
+ * récupère le choix lors de l'affichage du menu
+ * renvoie la fonction adéquate
+ **/
 void Gestion_Choix_Menu(int choix)
 {
     switch (choix)
@@ -95,11 +127,7 @@ void Gestion_Choix_Niveau(mastermind mastermind, int choix)
         Generation_Combinaison_Secrete(&mastermind.niveau);
         Separateur();
         /* affiche règles et lance le Mastermind */
-        printf("| Niveau %s |\n%s, tu as %d coups pour trouver la combinaison secrete de %d pions"
-        , mastermind.niveau.libelle
-        , mastermind.joueur.nom
-        , mastermind.niveau.coup
-        , mastermind.niveau.pion);
+        printf("| Niveau %s |\n%s, tu as %d coups pour trouver la combinaison secrete de %d pions", mastermind.niveau.libelle, mastermind.joueur.nom, mastermind.niveau.coup, mastermind.niveau.pion);
         Lancement_Mastermind(mastermind);
         break;
 
@@ -108,11 +136,7 @@ void Gestion_Choix_Niveau(mastermind mastermind, int choix)
         Generation_Combinaison_Secrete(&mastermind.niveau);
         Separateur();
         /* affiche règles et lance le Mastermind */
-        printf("| Niveau %s |\n%s, tu as %d coups pour trouver la combinaison secrete de %d pions"
-        , mastermind.niveau.libelle
-        , mastermind.joueur.nom
-        , mastermind.niveau.coup
-        , mastermind.niveau.pion);
+        printf("| Niveau %s |\n%s, tu as %d coups pour trouver la combinaison secrete de %d pions", mastermind.niveau.libelle, mastermind.joueur.nom, mastermind.niveau.coup, mastermind.niveau.pion);
         Lancement_Mastermind(mastermind);
         break;
 
@@ -121,11 +145,7 @@ void Gestion_Choix_Niveau(mastermind mastermind, int choix)
         Generation_Combinaison_Secrete(&mastermind.niveau);
         Separateur();
         /* affiche règles et lance le Mastermind */
-        printf("| Niveau %s |\n%s, tu as %d coups pour trouver la combinaison secrete de %d pions"
-        , mastermind.niveau.libelle
-        , mastermind.joueur.nom
-        , mastermind.niveau.coup
-        , mastermind.niveau.pion);
+        printf("| Niveau %s |\n%s, tu as %d coups pour trouver la combinaison secrete de %d pions", mastermind.niveau.libelle, mastermind.joueur.nom, mastermind.niveau.coup, mastermind.niveau.pion);
         Lancement_Mastermind(mastermind);
         break;
 
@@ -158,10 +178,7 @@ void Lancement_Mastermind(mastermind mastermind)
         if (bonnes_Reponses == mastermind.niveau.pion) // nombre de bonnes réponses = nombre de pions à trouvés
         {
             /* stocke le résultat dans "résultat" */
-            sprintf(resultat, "%s -> GAGNE (NIVEAU %s) -> %d coups\n"
-            , mastermind.joueur.nom
-            , mastermind.niveau.libelle
-            , mastermind.joueur.tentative);
+            sprintf(resultat, "%s -> GAGNE (NIVEAU %s) -> %d coups\n", mastermind.joueur.nom, mastermind.niveau.libelle, mastermind.joueur.tentative);
             Sauvegarder_Resultat(mastermind, resultat);
 
             /* affiche le résultat */
@@ -173,15 +190,11 @@ void Lancement_Mastermind(mastermind mastermind)
         else if (mastermind.joueur.tentative > mastermind.niveau.coup)
         {
             /* stocke le résultat dans "résultat" */
-            sprintf(resultat, "%s -> PERDU (NIVEAU %s)\n"
-            , mastermind.joueur.nom
-            , mastermind.niveau.libelle);
+            sprintf(resultat, "%s -> PERDU (NIVEAU %s)\n", mastermind.joueur.nom, mastermind.niveau.libelle);
             Sauvegarder_Resultat(mastermind, resultat);
 
             /* affiche le résultat */
-            printf("%s -> PERDU (NIVEAU %s) -> la combinaison secrete etait : "
-            , mastermind.joueur.nom
-            , mastermind.niveau.libelle);
+            printf("%s -> PERDU (NIVEAU %s) -> la combinaison secrete etait : ", mastermind.joueur.nom, mastermind.niveau.libelle);
             Afficher_Combinaison_Secrete(mastermind.niveau);
             break;
         }
